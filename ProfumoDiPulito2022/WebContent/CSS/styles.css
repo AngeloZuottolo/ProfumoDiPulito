@@ -1,45 +1,96 @@
-body { background-color: #fdf5e6 }
-a:hover { color: red }
-.title { 
-  margin-left: auto; 
-  margin-right: auto; 
-  border-width: 5px;
-  border-spacing: 2px;
-  border-style: outset;
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
 }
-.title th { 
-  background-color: #ef8429;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
+
+body{
+	background: #FFF;
 }
-th { background-color: #ef8429;
-     font-size: 18px;
-     font-family: Arial, Helvetica, sans-serif;
+h1{
+font-family: 'Montserrat',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 78px;
+text-align: center;
+
+color: #A4BEEE;
 }
-td { font-size: 18px;
-     font-family: Arial, Helvetica, sans-serif;
+.menu,
+a,
+button {
+	font-family:'Montserrat',sans-serif;
+	font-weight:300;
+	font-size:14px;
+	color: #658ac2;
+	text-decoration:none;
 }
-legend {
-  font-weight: bold;
-  color: black;
-  background-color: #eeeeee;
-  border: 1px solid #999999;
-  padding: 3px 2px;
+header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 30px 10%;
 }
-.ajaxResult { color: #440000;
-              font-weight: bold;
-              font-size: 18px;
-              font-family: Arial, Helvetica, sans-serif;
+.menu{
+	list-style:none;
+	
 }
-h2 { color: #440000;
-	  font-weight: bold;
-	  font-size: 18px;
-	  font-family: Arial, Helvetica, sans-serif;
+.menu li{
+	display:inline-block;
+	padding: 0 20px;
 }
-.error { background-color: yellow;
-	      color: red;
-	      font-weight: bold;
-	      font-size: 20px;
-	      font-family: Arial, Helvetica, sans-serif;
-	      border-style: inset;
+.menu li a{
+	transition: all.3s ease;
 }
+
+.menu a:hover{
+	/* Underline From Center */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.menu a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #A4BEEE;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.menu a:hover:before, .menu a:focus:before, .menu a:active:before {
+  left: 0;
+  right: 0;
+}
+	color:#b4a4d4;
+}
+
+button {
+	color:#fff;
+	padding: 9px 25px;
+	background:#a4beee;
+	border:none;
+	border-radius:50px;
+	cursor:pointer;
+	transition:all.3s ease;
+}
+button:hover {
+	background:#969ac4;
+}
+
+
+
+
+
